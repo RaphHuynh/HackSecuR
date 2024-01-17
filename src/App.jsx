@@ -1,7 +1,7 @@
 import './App.css'
-import Home from './components/Page/Home'
+import Home from './components/page/Home'
 import NavBar from './components/navbar/Navbar'
-import About from "./components/Page/About"
+import About from './components/page/About'
 import Planning from './components/page/Planning'
 import Equipe from './components/page/Equipe'
 import Sponsors from './components/page/Sponsors'
