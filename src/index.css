@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1E1E1E;
+}
+
+@font-face {
+  font-family: "Array-Bold";
+  src: url(./assets/font/Array/Fonts/OTF/Array-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Khand-regular";
+  src: url(./assets/font/Expose_Complete/Fonts/OTF/Expose-Regular.otf) format("opentype");
+}
+
+h1{
+  font-family: "Array-Bold";
+}
+
+p{
+  font-family: "Khand-regular";
+}
+
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.glow-blink{
+  animation: glow-blink 1.5s step-end infinite;
+}
+
+.title-blink{
+  animation: glow-title 1s step-end infinite;
+}
+
+@keyframes glow-blink{
+  50%{
+    opacity: 0.30;
+  }
+}
+
+@keyframes glow-title {
+  25%{
+    color: rgb(202, 0, 0);
+    text-shadow: 0px 0px 20px rgb(195, 0, 0);
+  }
+}
+
+.glow {
+  color: rgb(202, 0, 0);
+  text-shadow: 0px 0px 10px rgb(195, 0, 0);
+}

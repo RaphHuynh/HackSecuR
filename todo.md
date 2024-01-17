@@ -1,0 +1,2 @@
+- Faire une liste pour mapper les créneaux pour éviter de copier coller le composant
+- Faire un composant pour les partie du About
