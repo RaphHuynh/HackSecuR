@@ -5,6 +5,7 @@ import About from './components/page/About'
 import Planning from './components/page/Planning'
 import Equipe from './components/page/Equipe'
 import Sponsors from './components/page/Sponsors'
+import NavNetwork from './components/navbar/navNetwork'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Planning/>
       <Equipe/>
       <Sponsors/>
+      <NavNetwork/>
     </>
   )
 }
