@@ -7,7 +7,7 @@ function NavBar(){
     ]
 
     return(
-        <nav className="fixed w-full flex items-center px-10 md:px-24 py-2">
+        <nav className="fixed w-full flex items-center px-10 md:px-24 py-2 z-10">
             <a href="" className="">
                 <img src={logo} className="h-14"></img>
             </a>
