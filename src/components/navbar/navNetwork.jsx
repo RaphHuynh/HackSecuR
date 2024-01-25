@@ -7,10 +7,10 @@ function NavNetwork(){
     ]
 
     return(
-        <footer className="fixed flex bottom-0 w-full md:h-screen justify-center md:items-end gap-2">
+        <footer className="fixed flex bottom-0 w-full justify-center md:items-end gap-2 z-10">
             {link.map((item, index) => (
                 <a key={index} href={item.url} target="_blank" rel="noreferrer" className="">
-                    <svg viewBox="0 0 20 20" height={40} width={40} className="transition delay-100 my-1 fill-black hover:fill-red-600 dark:fill-slate-50">
+                    <svg viewBox="0 0 20 20" height={40} width={40} className="transition delay-100 my-1 fill-red-700 dark:hover:fill-slate-50">
                         <path d={item.image}></path>
                     </svg>
                 </a>

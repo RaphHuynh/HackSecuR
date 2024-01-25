@@ -1,16 +1,37 @@
-function Personne(props){
-    return(
-        <>
-        <aside className="text-center">
-            <h1 className="text-white/80 text-4xl">
-                {props.prenom} <span className="uppercase">{props.nom}</span>
-            </h1>
-            <p className="text-red-600 text-2xl">
-                {props.poste}
-            </p>
-        </aside>
-        </>
-    )
-}
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-export default Personne;
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+
+export default function Personne(props) {
+    return (
+      <>
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className="mySwiper"
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper>
+      </>
+    );
+  }
