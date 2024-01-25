@@ -46,7 +46,7 @@ function Equipe() {
                 >
                     {personnes.map((personne, index) => (
                         <SwiperSlide key={index} className="flex flex-col relative justify-center items-center">
-                            <img src={images[index]} className="" alt="Person Image" />
+                            <img src={images[index]} className="rounded-md" alt="Person Image" />
                             <div className="absolute bottom-0 p-4">
                                 <h1 className="text-white text-4xl text-center">
                                     {personne.prenom} {personne.nom}
