@@ -4,7 +4,6 @@ import CountdownTimer from "../kit_ux_ui/CountdownTimer";
 
 function Home(){
     return(
-        <>
         <section className="w-full h-screen flex flex-col justify-center items-center px-24 gap-4" id="Home">
             <article className="w-full flex justify-center items-center">
                 <aside className="flex flex-col w-full items-center">
@@ -17,7 +16,6 @@ function Home(){
             </article>
             <CountdownTimer/>
         </section>
-        </>
     )
 }
 

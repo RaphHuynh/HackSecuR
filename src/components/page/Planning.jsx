@@ -7,41 +7,39 @@ function Planning() {
     const creneauxSamedi = [{ "heure": "08:00", "content": "Buffet petit-déjeuner" }, { "heure": "10:00", "content": "Fin du CTF" }, { "heure": "10:30", "content": "Remise des prix et discours de clôture" }]
 
     return (
-        <>
-            <section className="w-full min-h-screen flex flex-col px-24 gap-10 justify-center items-center" id="Planning">
-                <Title
-                    title="Planning prévisionnel"
-                />
-                <article className="flex gap-10">
-                    <div className="flex flex-col gap-4 bg-white/5 px-5 py-5 rounded-md">
-                        <TitleSecond
-                            title="Vendredi 29 Mars"
-                        />
-                        <div className="flex flex-col gap-4">
-                            {creneauxVendredi.map((creneau) => (
-                                <Creneau
-                                    heure={creneau.heure}
-                                    content={creneau.content}
-                                />
-                            ))}
-                        </div>
+        <section className="w-full min-h-screen flex flex-col px-24 gap-10 justify-center items-center" id="Planning">
+            <Title
+                title="Planning prévisionnel"
+            />
+            <article className="flex gap-10">
+                <div className="flex flex-col gap-4 bg-white/5 px-5 py-5 rounded-md">
+                    <TitleSecond
+                        title="Vendredi 29 Mars"
+                    />
+                    <div className="flex flex-col gap-4">
+                        {creneauxVendredi.map((creneau) => (
+                            <Creneau
+                                heure={creneau.heure}
+                                content={creneau.content}
+                            />
+                        ))}
                     </div>
-                    <div className="flex flex-col gap-4 bg-white/5 px-5 py-5 rounded-md">
-                        <TitleSecond
-                            title="Samedi 30 Mars"
-                        />
-                        <div className="flex flex-col gap-4">
-                            {creneauxSamedi.map((creneau) => (
-                                <Creneau
-                                    heure={creneau.heure}
-                                    content={creneau.content}
-                                />
-                            ))}
-                        </div>
+                </div>
+                <div className="flex flex-col gap-4 bg-white/5 px-5 py-5 rounded-md">
+                    <TitleSecond
+                        title="Samedi 30 Mars"
+                    />
+                    <div className="flex flex-col gap-4">
+                        {creneauxSamedi.map((creneau) => (
+                            <Creneau
+                                heure={creneau.heure}
+                                content={creneau.content}
+                            />
+                        ))}
                     </div>
-                </article>
-            </section>
-        </>
+                </div>
+            </article>
+        </section>
     )
 }
 

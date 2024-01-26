@@ -9,7 +9,6 @@ import p7 from "../../assets/img/p7.jpg";
 import p8 from "../../assets/img/p8.jpg";
 import p9 from "../../assets/img/p9.jpg";
 
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -28,38 +27,36 @@ function Equipe() {
     const images = [p1, p2, p3, p4, p5, p6, p7, p8, p9];
 
     return (
-        <>
-            <section className="w-full min-h-screen flex flex-col px-24 gap-10 justify-center items-center" id="Team">
-                <Title
-                    title="Equipe HackSecu'R"
-                />
-                <Swiper
-                    cssMode={true}
-                    navigation={true}
-                    pagination={true}
-                    mousewheel={true}
-                    keyboard={true}
-                    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                    className="mySwiper w-full px-32 pb-10"
-                    slidesPerView={3}
-                    spaceBetween={10}
-                >
-                    {personnes.map((personne, index) => (
-                        <SwiperSlide key={index} className="flex flex-col relative justify-center items-center">
-                            <img src={images[index]} className="rounded-md" alt="Person Image" />
-                            <div className="absolute bottom-0 p-4">
-                                <h1 className="text-white text-4xl text-center">
-                                    {personne.prenom} {personne.nom}
-                                </h1>
-                                <p className="text-white/90 text-center text-2xl">
-                                    {personne.poste}
-                                </p>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </section>
-        </>
+        <section className="w-full min-h-screen flex flex-col px-24 gap-10 justify-center items-center" id="Team">
+            <Title
+                title="Equipe HackSecu'R"
+            />
+            <Swiper
+                cssMode={true}
+                navigation={true}
+                pagination={true}
+                mousewheel={true}
+                keyboard={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                className="mySwiper w-full px-32 pb-10"
+                slidesPerView={3}
+                spaceBetween={10}
+            >
+                {personnes.map((personne, index) => (
+                    <SwiperSlide key={index} className="flex flex-col relative justify-center items-center">
+                        <img src={images[index]} className="rounded-md" alt="Person Image" />
+                        <div className="absolute bottom-0 p-4">
+                            <h1 className="text-white text-4xl text-center">
+                                {personne.prenom} {personne.nom}
+                            </h1>
+                            <p className="text-white/90 text-center text-2xl">
+                                {personne.poste}
+                            </p>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </section>
     )
 }
 
